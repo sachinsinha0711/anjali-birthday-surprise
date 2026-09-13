@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Little Surprise For Anjali ❤️</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+    overflow: hidden;
+    color: #4a294f;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,.9), transparent 25%),
+        radial-gradient(circle at 80% 15%, rgba(255,255,255,.7), transparent 25%),
+        linear-gradient(135deg, #ffd6e7, #e8d9ff, #d7f5ff);
+}
+
+/* =========================
+   GENERAL
+========================= */
+
+.screen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* =========================
+   SPARKLES
+========================= */
+
+.sparkle {
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 12px white;
+    animation: sparkle 3s infinite ease-in-out;
+}
+
+.s1 { top: 12%; left: 12%; }
+.s2 { top: 20%; left: 88%; animation-delay: .7s; }
+.s3 { top: 70%; left: 8%; animation-delay: 1.4s; }
+.s4 { top: 78%; left: 90%; animation-delay: 2s; }
+.s5 { top: 45%; left: 50%; animation-delay: 1s; }
+
+@keyframes sparkle {
+    0%,100% {
+        transform: scale(.4);
+        opacity: .25;
+    }
+
+    50% {
+        transform: scale(1.7);
+        opacity: 1;
+    }
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.title {
+    margin-bottom: 45px;
+    position: relative;
+    z-index: 5;
+}
+
+.title h1 {
+    font-size: clamp(2.4rem, 7vw, 4.8rem);
+    color: #e83e8c;
+    text-shadow: 3px 3px white;
+}
+
+.title p {
+    margin-top: 12px;
+    font-size: 1.15rem;
+}
+
+/* =========================
+   BALLOONS
+========================= */
+
+.balloons {
+    position: relative;
+    z-index: 5;
+    width: min(950px, 100%);
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.balloon-wrapper {
+    width: 160px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.balloon {
+    width: 120px;
+    height: 150px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 52% 52% 48% 48%;
+    transition: .25s;
+    animation: floating 3s ease-in-out infinite;
+}
+
+.balloon:hover {
+    transform: scale(1.12) rotate(3deg);
+}
+
+.balloon::before {
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 16px solid currentColor;
+}
+
+.balloon::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 95px;
+    background: rgba(70,50,70,.3);
+    left: 50%;
+    top: 150px;
+}
+
+.shine {
+    position: absolute;
+    width: 25px;
+    height: 50px;
+    top: 20px;
+    left: 22px;
+    background: rgba(255,255,255,.65);
+    border-radius: 50%;
+    transform: rotate(25deg);
+}
+
+.shine2 {
+    position: absolute;
+    width: 9px;
+    height: 18px;
+    top: 73px;
+    left: 18px;
+    background: rgba(255,255,255,.3);
+    border-radius: 50%;
+}
+
+.balloon-number {
+    position: absolute;
+    top: 47px;
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+    text-shadow: 1px 2px 3px rgba(80,30,70,.3);
+}
+
+.balloon1 {
+    background: radial-gradient(circle at 30% 25%, #ffb1cf, #ff5f9e 38%, #df2f78);
+    color: #df2f78;
+    box-shadow: inset -12px -15px 25px rgba(150,20,70,.2),
+                inset 8px 5px 15px rgba(255,255,255,.3),
+                0 15px 30px rgba(223,47,120,.2);
+}
+
+.balloon2 {
+    background: radial-gradient(circle at 30% 25%, #c7c0ff, #8d7aff 38%, #6251db);
+    color: #6251db;
+    box-shadow: inset -12px -15px 25px rgba(60,40,160,.2),
+                inset 8px 5px 15px rgba(255,255,255,.3),
+                0 15px 30px rgba(98,81,219,.2);
+}
+
+.balloon3 {
+    background: radial-gradient(circle at 30% 25%, #ffe0a9, #ffb347 38%, #ed8b22);
+    color: #ed8b22;
+    box-shadow: inset -12px -15px 25px rgba(180,90,10,.2),
+                inset 8px 5px 15px rgba(255,255,255,.3),
+                0 15px 30px rgba(237,139,34,.2);
+}
+
+.balloon4 {
+    background: radial-gradient(circle at 30% 25%, #b8f5e7, #55d6be 38%, #28aa94);
+    color: #28aa94;
+    box-shadow: inset -12px -15px 25px rgba(20,120,100,.2),
+                inset 8px 5px 15px rgba(255,255,255,.3),
+                0 15px 30px rgba(40,170,148,.2);
+}
+
+@keyframes floating {
+    0%,100% {
+        transform: translateY(0) rotate(-2deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(2deg);
+    }
+}
+
+.pop {
+    animation: pop .45s forwards !important;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    35% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+/* =========================
+   INSTRUCTION
+========================= */
+
+.instruction {
+    position: relative;
+    z-index: 5;
+    padding: 12px 25px;
+    border-radius: 30px;
+    background: rgba(255,255,255,.6);
+    backdrop-filter: blur(8px);
+    color: #6d4aff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 0 8px 25px rgba(80,50,100,.08);
+}
+
+/* =========================
+   PASSWORD SCREEN
+========================= */
+
+#passwordScreen {
+    display: none;
+}
+
+.card {
+    width: min(600px, 100%);
+    padding: 45px 30px;
+    background: rgba(255,255,255,.9);
+    backdrop-filter: blur(15px);
+    border-radius: 35px;
+    box-shadow: 0 25px 70px rgba(80,40,100,.2);
+    animation: appear .8s ease;
+}
+
+.card h2 {
+    color: #e83e8c;
+    font-size: clamp(2.2rem, 6vw, 3.6rem);
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+.hint {
+    margin-top: 18px;
+    color: #765b7e;
+    font-size: 1rem !important;
+}
+
+.password-box {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.password-box input {
+    width: 180px;
+    padding: 15px;
+    border: 2px solid #e8c8df;
+    border-radius: 15px;
+    outline: none;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+}
+
+.password-box input:focus {
+    border-color: #e83e8c;
+}
+
+.main-button {
+    border: none;
+    padding: 15px 28px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #e83e8c, #8d7aff);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(150,60,160,.25);
+    transition: .3s;
+}
+
+.main-button:hover {
+    transform: scale(1.06);
+}
+
+.error {
+    color: #df397d;
+    margin-top: 15px;
+    font-weight: 600;
+    display: none;
+}
+
+/* =========================
+   BIRTHDAY MESSAGE
+========================= */
+
+#birthdayMessage {
+    display: none;
+}
+
+.message-card {
+    width: min(680px, 100%);
+    padding: 45px 30px;
+    background: rgba(255,255,255,.9);
+    backdrop-filter: blur(15px);
+    border-radius: 35px;
+    box-shadow: 0 25px 70px rgba(80,40,100,.2);
+    animation: appear .8s ease;
+}
+
+.message-card h2 {
+    color: #e83e8c;
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    margin-bottom: 25px;
+}
+
+.message-card p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+.small-text {
+    margin-top: 18px;
+    color: #765b7e;
+}
+
+.surprise-button {
+    margin-top: 30px;
+    border: none;
+    padding: 17px 35px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #e83e8c, #8d7aff);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%,100% {
+        box-shadow: 0 10px 25px rgba(150,60,160,.25);
+    }
+
+    50% {
+        box-shadow: 0 10px 35px rgba(232,62,140,.55);
+    }
+}
+
+@keyframes appear {
+    from {
+        transform: translateY(35px) scale(.92);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+/* =========================
+   PHOTO SURPRISE
+========================= */
+
+#surprise {
+    display: none;
+    min-height: 100vh;
+    overflow-y: auto;
+    padding: 30px 20px;
+}
+
+.surprise-card {
+    max-width: 850px;
+    margin: auto;
+    padding: 35px;
+    text-align: center;
+    background: rgba(255,255,255,.92);
+    border-radius: 35px;
+    box-shadow: 0 25px 70px rgba(70,30,90,.2);
+    animation: appear .9s ease;
+}
+
+.surprise-card h2 {
+    color: #e83e8c;
+    font-size: clamp(2.3rem, 7vw, 4.5rem);
+    margin-bottom: 25px;
+}
+
+.photo {
+    width: min(100%, 400px);
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 18px 40px rgba(60,30,70,.25);
+}
+
+.final-message {
+    max-width: 700px;
+    margin: 25px auto 0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.heart {
+    font-size: 3rem;
+    margin-top: 20px;
+    animation: heartbeat 1.2s infinite;
+}
+
+@keyframes heartbeat {
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.25);
+    }
+}
+
+/* =========================
+   CONFETTI
+========================= */
+
+.confetti {
+    position: fixed;
+    top: -20px;
+    width: 10px;
+    height: 15px;
+    z-index: 100;
+    animation: fall 4s linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh) rotate(720deg);
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:650px) {
+
+    .title {
+        margin-bottom: 25px;
+    }
+
+    .title h1 {
+        font-size: 2.5rem;
+    }
+
+    .title p {
+        font-size: 1rem;
+    }
+
+    .balloons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+    }
+
+    .balloon-wrapper {
+        width: 140px;
+        height: 190px;
+    }
+
+    .balloon {
+        width: 90px;
+        height: 115px;
+    }
+
+    .balloon::after {
+        top: 115px;
+        height: 65px;
+    }
+
+    .balloon-number {
+        top: 34px;
+        font-size: 1.6rem;
+    }
+
+    .instruction {
+        font-size: 1rem;
+    }
+
+    .password-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .password-box input {
+        width: 220px;
+    }
+
+    .card,
+    .message-card {
+        padding: 35px 22px;
+    }
+
+    .surprise-card {
+        padding: 25px 15px;
+    }
+
+    .final-message {
+        font-size: 1.05rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- BACKGROUND SPARKLES -->
+
+<div class="sparkle s1"></div>
+<div class="sparkle s2"></div>
+<div class="sparkle s3"></div>
+<div class="sparkle s4"></div>
+<div class="sparkle s5"></div>
+
+
+<!-- =========================
+     BALLOON GAME
+========================= -->
+
+<section class="screen" id="game">
+
+    <div class="title">
+
+        <h1>A Little Surprise 🎈</h1>
+
+        <p>
+            Pop the balloons to discover what's waiting for you ❤️
+        </p>
+
+    </div>
+
+
+    <div class="balloons">
+
+        <div class="balloon-wrapper">
+            <div class="balloon balloon1"
+                 id="balloon1"
+                 onclick="popBalloon(1)">
+                <div class="shine"></div>
+                <div class="shine2"></div>
+                <div class="balloon-number">1</div>
+            </div>
+        </div>
+
+
+        <div class="balloon-wrapper">
+            <div class="balloon balloon2"
+                 id="balloon2"
+                 onclick="popBalloon(2)">
+                <div class="shine"></div>
+                <div class="shine2"></div>
+                <div class="balloon-number">2</div>
+            </div>
+        </div>
+
+
+        <div class="balloon-wrapper">
+            <div class="balloon balloon3"
+                 id="balloon3"
+                 onclick="popBalloon(3)">
+                <div class="shine"></div>
+                <div class="shine2"></div>
+                <div class="balloon-number">3</div>
+            </div>
+        </div>
+
+
+        <div class="balloon-wrapper">
+            <div class="balloon balloon4"
+                 id="balloon4"
+                 onclick="popBalloon(4)">
+                <div class="shine"></div>
+                <div class="shine2"></div>
+                <div class="balloon-number">4</div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="instruction" id="instruction">
+        🎈 Pop Balloon 1!
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PASSWORD
+========================= -->
+
+<section class="screen" id="passwordScreen">
+
+    <div class="card">
+
+        <h2>
+            🎉 You made it!
+        </h2>
+
+        <p>
+            There is one more little step
+            before your surprise... ❤️
+        </p>
+
+        <p class="hint">
+            🔐 Hint: Your birthday — day and month 😉
+        </p>
+
+
+        <div class="password-box">
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                maxlength="4"
+                inputmode="numeric"
+            >
+
+            <button
+                class="main-button"
+                onclick="checkPassword()"
+            >
+                Reveal Surprise
+            </button>
+
+        </div>
+
+
+        <div class="error" id="error">
+            Hmm... that's not it 😜 Try again!
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     BIRTHDAY MESSAGE
+========================= -->
+
+<section class="screen" id="birthdayMessage">
+
+    <div class="message-card">
+
+        <h2>
+            ❤️ Happy Birthday, Anjali! ❤️
+        </h2>
+
+        <p>
+
+            I hope you have a truly wonderful
+            birthday, Anjali.
+
+            <br><br>
+
+            I hope this year brings you lots of
+            happiness, beautiful memories,
+            laughter and everything you wish for.
+
+            <br><br>
+
+            And honestly...
+
+            <br>
+
+            I would love to meet you soon
+            and celebrate properly with you. 😊❤️
+
+        </p>
+
+        <p class="small-text">
+
+            Since I couldn't deliver a little something
+            to you myself...
+
+            <br>
+
+            I left a small surprise here instead. 🎁
+
+        </p>
+
+
+        <button
+            class="surprise-button"
+            onclick="openSurprise()"
+        >
+            🎁 Open Your Surprise
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PHOTO
+========================= -->
+
+<section id="surprise">
+
+    <div class="surprise-card">
+
+        <h2>
+            🎉 Surprise! ❤️
+        </h2>
+
+
+        <img
+            src="anjali.jpg"
+            alt="Anjali"
+            class="photo"
+        >
+
+
+        <p class="final-message">
+
+            Happy Birthday, Anjali! 🎂❤️
+
+            <br><br>
+
+            I hope this little surprise
+            puts a big smile on your face.
+
+            <br><br>
+
+            You are someone truly special,
+            and I hope your birthday is
+            as wonderful as you are.
+
+            <br><br>
+
+            Keep smiling, keep shining,
+            and have an absolutely amazing
+            birthday! 🌸✨
+
+            <br><br>
+
+            Hopefully, I'll get to see you
+            and celebrate with you soon. ❤️
+
+        </p>
+
+
+        <div class="heart">
+            ❤️
+        </div>
+
+    </div>
+
+</section>
+
+
+<script>
+
+let currentBalloon = 1;
+
+
+/* =========================
+   POP BALLOONS
+========================= */
+
+function popBalloon(number) {
+
+    /* Must be done in order */
+
+    if (number !== currentBalloon) {
+        return;
+    }
+
+
+    const balloon =
+        document.getElementById("balloon" + number);
+
+
+    balloon.classList.add("pop");
+
+
+    if (number === 1) {
+
+        document.getElementById("instruction").innerHTML =
+            "🎈 Balloon 1 popped! Now pop Balloon 2!";
+
+        currentBalloon = 2;
+
+    }
+
+
+    else if (number === 2) {
+
+        document.getElementById("instruction").innerHTML =
+            "✨ Nice! Now pop Balloon 3!";
+
+        currentBalloon = 3;
+
+    }
+
+
+    else if (number === 3) {
+
+        document.getElementById("instruction").innerHTML =
+            "🎁 Almost there! Pop Balloon 4!";
+
+        currentBalloon = 4;
+
+    }
+
+
+    else if (number === 4) {
+
+        document.getElementById("instruction").innerHTML =
+            "🎉 You found something special! ❤️";
+
+        createConfetti();
+
+
+        setTimeout(function() {
+
+            document.getElementById("game").style.display =
+                "none";
+
+            document.getElementById("passwordScreen").style.display =
+                "flex";
+
+            document.body.style.overflow =
+                "auto";
+
+        }, 900);
+
+    }
+}
+
+
+/* =========================
+   PASSWORD
+========================= */
+
+function checkPassword() {
+
+    const entered =
+        document.getElementById("password").value;
+
+
+    const error =
+        document.getElementById("error");
+
+
+    if (entered === "1809") {
+
+        error.style.display = "none";
+
+
+        document.getElementById("passwordScreen").style.display =
+            "none";
+
+
+        document.getElementById("birthdayMessage").style.display =
+            "flex";
+
+
+        createConfetti();
+
+    }
+
+    else {
+
+        error.style.display =
+            "block";
+
+    }
+}
+
+
+/* Press Enter to submit */
+
+document.getElementById("password").addEventListener(
+    "keydown",
+    function(event) {
+
+        if (event.key === "Enter") {
+            checkPassword();
+        }
+
+    }
+);
+
+
+/* =========================
+   OPEN PHOTO SURPRISE
+========================= */
+
+function openSurprise() {
+
+    document.getElementById("birthdayMessage").style.display =
+        "none";
+
+    document.getElementById("surprise").style.display =
+        "block";
+
+    document.body.style.overflow =
+        "auto";
+
+    createConfetti();
+
+}
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+function createConfetti() {
+
+    for (let i = 0; i < 160; i++) {
+
+        const piece =
+            document.createElement("div");
+
+        piece.classList.add("confetti");
+
+        piece.style.left =
+            Math.random() * 100 + "vw";
+
+        piece.style.animationDelay =
+            Math.random() * 2 + "s";
+
+        piece.style.background =
+            [
+                "#ff5f9e",
+                "#8d7aff",
+                "#ffb347",
+                "#55d6be",
+                "#f7d154",
+                "#ff7eb3"
+            ][
+                Math.floor(Math.random() * 6)
+            ];
+
+        piece.style.transform =
+            `rotate(${Math.random() * 360}deg)`;
+
+        document.body.appendChild(piece);
+
+
+        setTimeout(function() {
+            piece.remove();
+        }, 6000);
+
+    }
+}
+
+</script>
+
+</body>
+</html>
